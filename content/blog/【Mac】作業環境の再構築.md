@@ -43,7 +43,7 @@ Raycastrは多機能で以下のようなことができます
 参考 https://zenn.dev/fumi_sagawa/articles/2ff5fd9c03fbcd
 
 ## [Ice](../DB/Software/Software_DATA/Ice.md)
-![](../../../Pasted%20image%2020241118124621.png)
+![](../attachments/Pasted%20image%2020241118124621.png)
 macのメニューバーを管理するソフトウェアです。
 ソフトが増えてくると、上図のように項目が増え煩わしくなることがあると思います。
 
