@@ -1,4 +1,4 @@
 ---
 title: ホームページ
 ---
-hoge hoge...
+hoge hoge...!
