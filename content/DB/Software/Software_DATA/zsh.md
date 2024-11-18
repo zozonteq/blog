@@ -1,0 +1,6 @@
+---
+os:
+  - Linux
+  - Windows
+  - MacOS
+---
