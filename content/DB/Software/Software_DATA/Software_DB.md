@@ -47,7 +47,6 @@ columns:
       - { label: "Linux", value: "Linux", color: "hsl(116, 95%, 90%)"}
       - { label: "Android", value: "Android", color: "hsl(316, 95%, 90%)"}
       - { label: "iOS", value: "iOS", color: "hsl(179, 95%, 90%)"}
-      - { label: "a", value: "a", color: "hsl(105, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
