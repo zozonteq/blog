@@ -42,11 +42,11 @@ columns:
     sortIndex: -1
     width: 470
     options:
-      - { label: "Windows", value: "Windows", color: "hsl(144, 95%, 90%)"}
-      - { label: "MacOS", value: "MacOS", color: "hsl(347, 95%, 90%)"}
-      - { label: "Linux", value: "Linux", color: "hsl(116, 95%, 90%)"}
-      - { label: "Android", value: "Android", color: "hsl(316, 95%, 90%)"}
-      - { label: "iOS", value: "iOS", color: "hsl(179, 95%, 90%)"}
+      - { label: "Windows", value: "Windows", color: "hsl(236,93%,88%)"}
+      - { label: "MacOS", value: "MacOS", color: "hsl(0,93%,88%)"}
+      - { label: "Linux", value: "Linux", color: "hsl(58,93%,88%)"}
+      - { label: "Android", value: "Android", color: "hsl(126,93%,88%)"}
+      - { label: "iOS", value: "iOS", color: "hsl(181,93%,88%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
