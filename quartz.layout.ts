@@ -28,6 +28,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(
+      Component.RecentNotes({title:"最近の更新",limit:5}),
+    )
   ],
   right: [
     Component.Graph(),

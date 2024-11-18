@@ -11,3 +11,7 @@ Youtubeの動画を見ていると、たまに動画内で宣伝などが入る�
 # Firefox Multi-Account Containers
 タブごとに異なるプロファイルを割り当てることができる[Firefox](../DB/Software/Software_DATA/Firefox.md)公式の拡張機能です。学校や職場用に複数のアカウントを持っている場合はめっちゃオススメです。またFireFox Syncで同期もされます。
 website: https://github.com/mozilla/multi-account-containers#readme
+
+# refined-github
+Githubが使いやすくなります。Github使う人は入れた方がいい。
+https://github.com/refined-github/refined-github
