@@ -5,7 +5,7 @@ database-plugin: basic
 ---
 
 ```yaml:dbfolder
-name: new database
+name: blog
 description: new description
 columns:
   __file__:
@@ -53,6 +53,94 @@ columns:
       footer_type: none
       persist_changes: false
       option_source: manual
+  aliases:
+    input: text
+    accessorKey: aliases
+    key: aliases
+    id: aliases
+    label: aliases
+    position: 100
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    width: 185
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  __created__:
+    key: __created__
+    id: __created__
+    input: metadata_time
+    label: Created
+    accessorKey: __created__
+    isMetadata: true
+    isDragDisabled: false
+    skipPersist: false
+    csvCandidate: true
+    width: 201
+    position: 0
+    isHidden: false
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  __modified__:
+    key: __modified__
+    id: __modified__
+    input: metadata_time
+    label: Modified
+    accessorKey: __modified__
+    isMetadata: true
+    isDragDisabled: false
+    skipPersist: false
+    csvCandidate: true
+    position: 0
+    isHidden: false
+    sortIndex: -1
+    width: 198
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  __tags__:
+    key: __tags__
+    id: __tags__
+    input: metadata_tags
+    label: File Tags
+    accessorKey: __tags__
+    isMetadata: true
+    isDragDisabled: false
+    skipPersist: false
+    csvCandidate: false
+    position: 0
+    isHidden: true
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
 config:
   remove_field_when_delete_column: false
   cell_size: normal
@@ -61,12 +149,12 @@ config:
   remove_empty_folders: false
   automatically_group_files: false
   hoist_files_with_empty_attributes: true
-  show_metadata_created: false
-  show_metadata_modified: false
+  show_metadata_created: true
+  show_metadata_modified: true
   show_metadata_tasks: false
   show_metadata_inlinks: false
   show_metadata_outlinks: false
-  show_metadata_tags: false
+  show_metadata_tags: true
   source_data: current_folder
   source_form_result: 
   source_destination_path: /
@@ -81,7 +169,7 @@ config:
   date_format: yyyy-MM-dd
   datetime_format: "yyyy-MM-dd HH:mm:ss"
   metadata_date_format: "yyyy-MM-dd HH:mm:ss"
-  enable_footer: false
+  enable_footer: true
   implementation: default
 filters:
   enabled: false

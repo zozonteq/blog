@@ -1,3 +1,6 @@
+---
+aliases: firefox-extensions
+---
 # uBlock Origin
 これ入れておけば大抵の広告は抹消されるのでおすすめです！
 # Vimium

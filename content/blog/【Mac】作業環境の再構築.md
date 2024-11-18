@@ -1,6 +1,7 @@
 ---
 tags:
   - "#mac"
+aliases: mac-env
 ---
 > [!NOTE]
 > 執筆途中です。
