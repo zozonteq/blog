@@ -30,6 +30,8 @@ columns:
       task_hide_completed: true
       footer_type: none
       persist_changes: false
+      content_alignment: text-align-left
+      content_vertical_alignment: align-top
   os:
     input: tags
     accessorKey: os
@@ -41,12 +43,14 @@ columns:
     isHidden: false
     sortIndex: -1
     width: 470
+    isSorted: false
+    isSortedDesc: false
     options:
-      - { label: "Windows", value: "Windows", color: "hsl(236,93%,88%)"}
       - { label: "MacOS", value: "MacOS", color: "hsl(0,93%,88%)"}
-      - { label: "Linux", value: "Linux", color: "hsl(58,93%,88%)"}
-      - { label: "Android", value: "Android", color: "hsl(126,93%,88%)"}
-      - { label: "iOS", value: "iOS", color: "hsl(181,93%,88%)"}
+      - { label: "Android", value: "Android", color: "hsl(188, 95%, 90%)"}
+      - { label: "iOS", value: "iOS", color: "hsl(246, 95%, 90%)"}
+      - { label: "Linux", value: "Linux", color: "hsl(144, 95%, 90%)"}
+      - { label: "Windows", value: "Windows", color: "hsl(247, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -79,7 +83,7 @@ columns:
       persist_changes: false
 config:
   remove_field_when_delete_column: false
-  cell_size: normal
+  cell_size: compact
   sticky_first_column: false
   group_folder_column: 
   remove_empty_folders: false
@@ -96,7 +100,7 @@ config:
   source_destination_path: /
   row_templates_folder: /
   current_row_template: 
-  pagination_size: 10
+  pagination_size: 185
   font_size: 16
   enable_js_formulas: false
   formula_folder_path: /

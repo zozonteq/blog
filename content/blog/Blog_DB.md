@@ -30,6 +30,7 @@ columns:
       task_hide_completed: true
       footer_type: none
       persist_changes: false
+      content_vertical_alignment: align-middle
   tags:
     input: tags
     accessorKey: tags
@@ -42,7 +43,7 @@ columns:
     sortIndex: -1
     width: 271
     options:
-      - { label: "Mac", value: "#mac", color: "hsl(23, 95%, 90%)"}
+      - { label: "Mac", value: "#Mac", color: "hsl(23, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -109,7 +110,7 @@ columns:
     position: 0
     isHidden: false
     sortIndex: -1
-    width: 198
+    width: 238
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -131,6 +132,25 @@ columns:
     csvCandidate: false
     position: 0
     isHidden: true
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  title:
+    input: text
+    accessorKey: title
+    key: title
+    id: title
+    label: title
+    position: 100
+    skipPersist: false
+    isHidden: false
     sortIndex: -1
     config:
       enable_media_view: true
