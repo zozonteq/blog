@@ -44,6 +44,8 @@ columns:
     width: 271
     options:
       - { label: "Mac", value: "#Mac", color: "hsl(23, 95%, 90%)"}
+      - { label: "Linux", value: "#Linux", color: "hsl(220, 95%, 90%)"}
+      - { label: "Android", value: "#Android", color: "hsl(174, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true

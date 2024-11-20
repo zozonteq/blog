@@ -68,19 +68,24 @@ macのメニューバーを管理するソフトウェアです。
 オープンソースの画面録画・配信ソフトウェアです。**ハードウェアエンコード**ができたり出力形式の豊富で高機能ため使っています。
 
 # [tailscale](../DB/Software/Software_DATA/tailscale.md)
- 無料のVPNです。プライベートネットワーク上のデバイスでのみ総合通信することができます。これを導入することで家で動かしているサーバーや、パソコンにリモートから簡単にアクセスすることができるようになります。
+ 無料のVPN。プライベートネットワーク上のデバイスでのみ総合通信することができます。これを導入することで家で動かしているサーバーや、パソコンにリモートから簡単にアクセスすることができるようになります。
  他のユーザーやチームでコンピューターを共有したりすることもできます。
- 公式サイト：https://tailscale.com/
+ 公式サイト： https://tailscale.com/
 # コマンドライン環境（CLI）
 ここからはCLI環境についてです。
 # [iTerm2](../DB/Software/Software_DATA/iTerm2.md)
 ターミナルは一番人気な[iTerm2](../DB/Software/Software_DATA/iTerm2.md)にしました。背景の透過やショートカットキーや設定項目が豊富で使い勝手も良くおすすめです。
-
 # [zsh](../DB/Software/Software_DATA/zsh.md)
 [nushell](../DB/Software/Software_DATA/nushell.md)や[fish](../DB/Software/Software_DATA/fish.md)などとも迷いましたが、[zsh](../DB/Software/Software_DATA/zsh.md)はmacOS標準なのでzshにしました。
+[sheldon](../DB/Software/Software_DATA/sheldon.md)という高速なプラグインマネージャを使っています。またプロンプトには[starship](../DB/Software/Software_DATA/starship.md)を使っています。
 ## その他コマンド
-- bat
-- ripgrep
-- eza
-- peco
-- fzf
+- [bat](../DB/Software/Software_DATA/bat.md)
+	- [cat](../DB/Software/Software_DATA/cat.md)コマンドの改良版
+- [ripgrep](../DB/Software/Software_DATA/ripgrep.md)
+	- [grep](../DB/Software/Software_DATA/grep.md)コマンドの改良版
+- [eza](../DB/Software/Software_DATA/eza.md)
+	- [exa](../DB/Software/Software_DATA/exa.md)の後継でlsコマンドの改良版。ファイルやディレクトリの表示などができる。
+- [peco](../DB/Software/Software_DATA/peco.md)
+	- データのフィルタリング
+- [fzf](../DB/Software/Software_DATA/fzf.md)
+	- コマンドライン上でファイル検索・コマンドの履歴検索ができる。

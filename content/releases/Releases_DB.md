@@ -5,7 +5,7 @@ database-plugin: basic
 ---
 
 ```yaml:dbfolder
-name: software
+name: new database
 description: new description
 columns:
   __file__:
@@ -30,49 +30,16 @@ columns:
       task_hide_completed: true
       footer_type: none
       persist_changes: false
-      content_alignment: text-align-left
-      content_vertical_alignment: align-top
-  os:
-    input: tags
-    accessorKey: os
-    key: os
-    id: os
-    label: os
-    position: 100
-    skipPersist: false
-    isHidden: false
-    sortIndex: -1
-    width: 470
-    isSorted: false
-    isSortedDesc: false
-    options:
-      - { label: "MacOS", value: "MacOS", color: "hsl(0,93%,88%)"}
-      - { label: "Android", value: "Android", color: "hsl(188, 95%, 90%)"}
-      - { label: "iOS", value: "iOS", color: "hsl(246, 95%, 90%)"}
-      - { label: "Linux", value: "Linux", color: "hsl(144, 95%, 90%)"}
-      - { label: "Windows", value: "Windows", color: "hsl(247, 95%, 90%)"}
-      - { label: "lim", value: "lim", color: "hsl(57, 95%, 90%)"}
-    config:
-      enable_media_view: true
-      link_alias_enabled: true
-      media_width: 100
-      media_height: 100
-      isInline: false
-      task_hide_completed: true
-      footer_type: none
-      persist_changes: false
-      option_source: manual
-  website:
+  download_page:
     input: text
-    accessorKey: website
-    key: website
-    id: website
-    label: website
+    accessorKey: download_page
+    key: download_page
+    id: download_page
+    label: download_page
     position: 100
     skipPersist: false
     isHidden: false
     sortIndex: -1
-    width: 423
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -84,7 +51,7 @@ columns:
       persist_changes: false
 config:
   remove_field_when_delete_column: false
-  cell_size: compact
+  cell_size: normal
   sticky_first_column: false
   group_folder_column: 
   remove_empty_folders: false
@@ -101,7 +68,7 @@ config:
   source_destination_path: /
   row_templates_folder: /
   current_row_template: 
-  pagination_size: 185
+  pagination_size: 50
   font_size: 16
   enable_js_formulas: false
   formula_folder_path: /
