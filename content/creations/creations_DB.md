@@ -30,12 +30,51 @@ columns:
       task_hide_completed: true
       footer_type: none
       persist_changes: false
-  download_page:
+  title:
     input: text
-    accessorKey: download_page
-    key: download_page
-    id: download_page
-    label: download_page
+    accessorKey: title
+    key: title
+    id: title
+    label: title
+    position: 100
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  website:
+    input: text
+    accessorKey: website
+    key: website
+    id: website
+    label: website
+    position: 100
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    width: 190
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  description:
+    input: text
+    accessorKey: description
+    key: description
+    id: description
+    label: description
     position: 100
     skipPersist: false
     isHidden: false
