@@ -1,5 +1,6 @@
 ---
 aliases: firefox-extensions
+date: 2024-11-18T00:00:00.000+09:00
 ---
 # uBlock Origin
 これ入れておけば大抵の広告は抹消されるのでおすすめです！

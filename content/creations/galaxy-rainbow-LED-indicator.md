@@ -1,6 +1,9 @@
 ---
 title: galaxy-rainbow-LED-indicator
 website: https://github.com/zozonteq/galaxy-rainbow-LED-indicator
+tags:
+  - tweak
+date: 2020-08-19T00:00:00.000+09:00
 ---
 ![](../attachments/185723353-da3ba7a5-571c-41d8-a398-6e461ed8ba19.gif)
 

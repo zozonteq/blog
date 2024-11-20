@@ -1,3 +1,9 @@
+---
+tags:
+  - discord-bot
+title: モジュール式ディスコボット開発テンプレート
+date: 2024-09-23T00:00:00.000+09:00
+---
 モジュール性を重視したTypeScript製の[DIscord](../DB/Software/Software_DATA/DIscord.md)ボット開発テンプレート。
 
 # 特長

@@ -18,7 +18,7 @@ columns:
     skipPersist: false
     isDragDisabled: false
     csvCandidate: true
-    position: 0
+    position: 1
     isHidden: false
     sortIndex: -1
     config:
@@ -36,7 +36,7 @@ columns:
     key: title
     id: title
     label: title
-    position: 100
+    position: 2
     skipPersist: false
     isHidden: false
     sortIndex: -1
@@ -56,7 +56,7 @@ columns:
     key: website
     id: website
     label: website
-    position: 100
+    position: 4
     skipPersist: false
     isHidden: false
     sortIndex: -1
@@ -76,6 +76,49 @@ columns:
     key: description
     id: description
     label: description
+    position: 5
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  tags:
+    input: tags
+    accessorKey: tags
+    key: tags
+    id: tags
+    label: tags
+    position: 3
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    options:
+      - { label: "gamedev", value: "gamedev", color: "hsl(22, 95%, 90%)"}
+      - { label: "discord-bot", value: "discord-bot", color: "hsl(39, 95%, 90%)"}
+      - { label: "web", value: "web", color: "hsl(357, 95%, 90%)"}
+      - { label: "tweak", value: "tweak", color: "hsl(302, 95%, 90%)"}
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  date:
+    input: calendar
+    accessorKey: date
+    key: date
+    id: date
+    label: date
     position: 100
     skipPersist: false
     isHidden: false

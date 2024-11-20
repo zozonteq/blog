@@ -2,6 +2,7 @@
 tags:
   - "#Mac"
 aliases: mac-env
+date: 2024-11-18T00:00:00.000+09:00
 ---
 > [!NOTE]
 > 執筆途中です。

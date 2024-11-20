@@ -1,3 +1,6 @@
+---
+date: 2022-02-15T00:00:00.000+09:00
+---
 ![](../attachments/rgbblack.gif)
 
 虹色にアニメーションする[vimium](../DB/Software/Software_DATA/vimium.md)テーマです。黒と白の２種類あります
