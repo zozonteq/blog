@@ -1,0 +1,6 @@
+---
+os:
+  - Android
+  - Linux
+  - Windows
+---

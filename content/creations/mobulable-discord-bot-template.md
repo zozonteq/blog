@@ -71,7 +71,7 @@ export const moduleManager = new BotModuleManager(
 - モジュールの内容を記述した`.ts`ファイルのインポートを忘れないでください。
 これで、`exampleModule`が読み込まれるようになりました
 ## 起動
-```
+```shell
 deno run dev
 ```
 上記のコマンドでbotが開始されます。ログが流れるので、そこに「`Hello,World!`」と出力されれば成功です。
