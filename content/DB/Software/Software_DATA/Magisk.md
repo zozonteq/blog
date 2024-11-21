@@ -1,4 +1,5 @@
 ---
 os:
   - Android
+  - MacOS
 ---
