@@ -7,6 +7,7 @@ date: 2024-11-18T00:00:00.000+09:00
 # Vimium
 hjklでカーソル移動など、[Vim](../DB/Software/Software_DATA/Vim.md)ライクな操作をブラウザでも使うことができるようになります。これによりマウスを使う機会が減ります。
 参考： https://qiita.com/arihori13/items/19ff042ecca5c3b0b2c4
+
 # SponsorBlock for Youtube
 Youtubeの動画を見ていると、たまに動画内で宣伝などが入る時ありますよね？それをスキップしてくれる拡張機能です。ストレスフリーで動画見れるのでおすすめです。
 # Renewed Tab
