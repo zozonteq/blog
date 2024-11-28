@@ -1,6 +1,9 @@
 ---
 tags:
   - "#3ds"
+relation:
+  - "[[blog/content/tips/3DS更新データの吸い出し.md|3DS更新データの吸い出し]]"
+  - "[[blog/content/tips/3DSゲームのROM吸い出し.md|3DSゲームのROM吸い出し]]"
 ---
 # 前提条件
 - Godmode9導入済み
