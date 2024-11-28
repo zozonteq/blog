@@ -6,3 +6,4 @@
 3. `./0004000e`に対してR + Aコンボから`Directory options`を立ち上げ`Search for titles`を選択しゲームタイトルのみを表示するようにする。
 4. 一覧から欲しい更新データを探し、見つけたら`A`ボタンを押して`TMD file options...`を選択
 5. `Build CIA(standard)`を選択しビルド終了まで待機
+6. ビルド終了後、`0:/gm9/out`にビルド成果物が配置
