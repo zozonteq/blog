@@ -8,12 +8,14 @@ title: Tensorflow.jsでmnist(文字認識）をやってみる
 > [!INFO]
 > 執筆中です
 # はじめに
-先日、ensorflow.jsを使って手書きの数字の分類モデルを作成したのでその時のメモです！
+先日、Tensorflow.jsを使って手書きの数字の分類モデルを作成したのでその時のメモです！
 
 mnistはtensorflow（Pythonの方）の公式チュートリアル序盤に登場するくらい有名なデータセットで、機械学習初学者にもおすすめです。
 ## この記事で取り扱うこと
 - JavaScript（Node.JS）で機械学習モデルの構築
 - parquetファイルの読み取り
+- JavaScriptでニューラルの構築とコンパイル
+- モデルの精度検証
 
 ニューラルネットや機械学習の細かい仕組みについてはあまり触れられないかもしれません。
 ## 環境
@@ -107,6 +109,9 @@ const LoadDataset= async (path) => {
 - ファイルからデータを全て読み込み終わったら、`while`ループから抜け`buffer`配列の値が返されます。
 ## データセットをロードする
 ```js
+const TRAIN_DATA_URL = "https://huggingface.co/datasets/ylecun/mnist/resolve/main/mnist/train-00000-of-00001.parquet"
+const TEST_DATA_URL  = "https://huggingface.co/datasets/ylecun/mnist/resolve/main/mnist/test-00000-of-00001.parquet"
+
 const datasets = [
 	{
 	  name: "train.parquet",
@@ -125,4 +130,36 @@ const testdata = await LoadDataset(path.join(DOWNLOAD_DIR,datasets[1].name));
 
 ```
 - これで`.parquet`形式のデータセットを読み取る関数が完成したので、データセットの用意からロードまでの部分が完成しました。
-- ロードしたデータは
+- 先ほど作成した、`await LoadDataset(path)`を呼び出してデータを取ります。引数にはダウンロードしたデータセットのファイルパスを指定します。
+- トレーニング用とテスト用のデータをこのタイミングで両方とも読み込んでいます。
+## データの読み取りについて
+```javascript
+[
+	// ...
+	{
+		image: [00,00,00,34,34,34,67,67,67,...],
+		label : "1"
+	},
+	{
+		image: [F0,F0,00,24,24,34,67,67,67,...],
+		label : "1"
+	},
+	
+	// ...
+]
+```
+- 読み込んだParquetデータの読み込みについてです。
+- 今回のmnistデータの場合、上のようなデータ構成になっています。
+- `image`: 画像ファイルがバイト列で並べられています。
+	- フォーマットはモデルによってバラバラですが、学習しやすいように`bmp`などといったピクセルごとに独立した画像フォーマットを使うことが推奨されます。
+- `label`:対象となる学習データの答えとなる値です。
+	- たとえば今回のデータセットの場合、`image`の手書き画像が「０」を表す画像であれば、`label`の値は０となります。
+## 0番目のlabelの値を読み取ってみる
+```js
+PrepareDataset(datasets); // データセットをダウンロード
+const traindata = await LoadDataset(path.join(DOWNLOAD_DIR,datasets[0].name)); //トレーニング用のデータをロード
+const label = traindata[0].label; // 0番目のラベルの値。
+const image_byte = traindata[0].image.bytes; // 0番目の画像の値（バイト列）。
+```
+簡略版のソースコードですが、このような形で各値を読み取ることができます。
+## 
