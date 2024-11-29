@@ -1,3 +1,7 @@
+---
+tags:
+  - "#python"
+---
 # はじめに
 [MacOS](../DB/Software/Software_DATA/MacOS.md)でPoetryを使ってTensorFlowの環境を構築する手順。
 - Pythonのバージョン管理はpyenv
