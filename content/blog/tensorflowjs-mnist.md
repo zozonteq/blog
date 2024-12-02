@@ -33,7 +33,7 @@ mnistはtensorflow（Pythonの方）の公式チュートリアル序盤に登�
 - 機械学習では説明変数から目的変数を適切に予測するのが目的です。
 # データセットの用意
 - まずは学習に使うデータセットの用意です。データセットはhuggingfaceから、`ylencun/mnist`を利用します。
-	- 数字とラベルがセットになっているデータセットです。機械学習入門で人気のデータセットです。
+	- **数字とラベルがセットになっている**データセットです。機械学習入門で人気のデータセットです。
 	- トレーニング用 https://huggingface.co/datasets/ylecun/mnist/resolve/main/mnist/train-00000-of-00001.parquet
 	- テスト用 https://huggingface.co/datasets/ylecun/mnist/resolve/main/mnist/test-00000-of-00001.parquet
 - また、今後の作業の簡略化のためにダウンロードや保存などといった処理をまとめました。
@@ -322,3 +322,42 @@ model.add(tf.layers.dense({
 		- 今回の場合だと、入力された画像から０、１、２、３、４、５、６、７、８、９のいずれかを推論します。
 	- 活性化関数はSoftmaxです。これにより**最終的な確率分布を出力**します。
 # モデルのコンパイル
+- トレーニングをする前にモデルのコンパイルを行います
+- `model.compile()`を呼び出すことでコンパイルできます。
+```js
+model.compile({
+    optimizer: "adam",
+    loss: "sparseCategoricalCrossentropy",
+    metrics: ["accuracy"]
+})
+```
+- 各引数の説明
+	- `optimizer`: 最適化アルゴリズムを指定できます。今回は[Adam](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html#AdamOptimizer)(Adaptive Moment Estimation)を使用します。他にも[Adagrad](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html#AdagradOptimizer)や[GradientDescent](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html#GradientDescentOptimizer)、[Adadelta](https://www.tensorflow.org/versions/r0.11/api_docs/python/train.html#AdadeltaOptimizer)などがあります。
+	- `loss`:
+	- `metrics`:
+
+# モデルのトレーニング
+- コンパイルが終わったので、モデルをトレーニングしていきます。
+- トレーニングするには`model.fit`を呼び出します。
+```js
+model.fit(xs,ys,{
+	epochs:30,
+	batchSize:64
+}).then(async () => {
+	model.save("file://./model")
+	
+	const test_xs = tf.tensor2d(test_features);
+	const test_ys = tf.tensor1d(test_labels, 'float32');
+	console.log("xs",test_xs," ys",test_ys)
+	
+	const r = model.evaluate(test_xs,test_ys);
+	console.log("r=",... r[1].dataSync())
+})
+```
+- 引数について
+	1. `xs`:前の章で用意した説明変数のテンソルです。
+	2. `ys`:前の章で用意した目的変数のテンソルです。
+	3. トレーニングに関するオプション
+		- `epoch`:
+		- `batchSize`:
+- 
