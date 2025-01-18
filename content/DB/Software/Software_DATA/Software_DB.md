@@ -32,10 +32,30 @@ columns:
       persist_changes: false
       content_alignment: text-align-left
       content_vertical_alignment: align-top
-  os:
+  website:
+    input: text
+    accessorKey: website
+    key: website
+    id: website
+    label: website
+    position: 100
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    width: 423
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  tags:
     input: tags
-    accessorKey: os
-    key: os
+    accessorKey: tags
+    key: tags
     id: os
     label: os
     position: 100
@@ -62,26 +82,6 @@ columns:
       footer_type: none
       persist_changes: false
       option_source: manual
-  website:
-    input: text
-    accessorKey: website
-    key: website
-    id: website
-    label: website
-    position: 100
-    skipPersist: false
-    isHidden: false
-    sortIndex: -1
-    width: 423
-    config:
-      enable_media_view: true
-      link_alias_enabled: true
-      media_width: 100
-      media_height: 100
-      isInline: false
-      task_hide_completed: true
-      footer_type: none
-      persist_changes: false
 config:
   remove_field_when_delete_column: false
   cell_size: compact

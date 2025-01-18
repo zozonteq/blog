@@ -1,6 +1,6 @@
 ---
 website: https://tailscale.com/
-os:
+tags:
   - Android
   - MacOS
   - iOS

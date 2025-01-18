@@ -1,5 +1,5 @@
 ---
-os:
+tags:
   - Linux
 ---
 [Linux](Linux.md)でX Window Systemで動くタイル型のウィンドウマネージャ

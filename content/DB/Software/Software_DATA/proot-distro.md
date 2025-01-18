@@ -1,5 +1,5 @@
 ---
-os:
+tags:
   - Linux
 ---
 [termux](termux.md)に導入することで、[debian](debian.md)や[ubuntu](ubuntu.md)、[Arch Linux](Arch%20Linux.md)といったLinuxディストリビューションを動作させることができる。

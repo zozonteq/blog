@@ -1,5 +1,5 @@
 ---
-os:
+tags:
   - Android
   - MacOS
   - iOS

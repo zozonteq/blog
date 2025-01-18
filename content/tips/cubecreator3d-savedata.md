@@ -114,7 +114,7 @@ addr:`0x1500`の`0xA1 0x0D`の部分
 - いし
 	- ![](../attachments/Pasted%20image%2020241202183834.png)
 #### 共通部分
-- 以下のスクリーンショットは石の糖を立てた時のチャンクです。
+- 以下のスクリーンショットは石の糖を立てた時のチャンク
 ![](../attachments/Pasted%20image%2020241202184050.png)
 ![](../attachments/Pasted%20image%2020241202184122.png)
 ![](../attachments/Pasted%20image%2020241202184206.png)

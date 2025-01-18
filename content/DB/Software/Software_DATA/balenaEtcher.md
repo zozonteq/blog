@@ -1,5 +1,5 @@
 ---
-os:
+tags:
   - MacOS
   - Windows
   - Linux

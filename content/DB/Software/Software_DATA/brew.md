@@ -1,7 +1,7 @@
 ---
-os:
-  - MacOS
 website: https://brew.sh/ja/
+tags:
+  - MacOS
 ---
 [MacOS](MacOS.md)のために開発されたパッケージマネージャ
 

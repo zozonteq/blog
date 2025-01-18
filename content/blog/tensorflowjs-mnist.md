@@ -360,4 +360,3 @@ model.fit(xs,ys,{
 	3. トレーニングに関するオプション
 		- `epoch`:
 		- `batchSize`:
-- 
